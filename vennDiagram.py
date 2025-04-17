@@ -1,0 +1,8 @@
+set1 = set("abcdijklm")
+set2 = set("defghijnop")
+set3 = set("klmijnopqrst")
+print(set1.intersection(set2).intersection(set3))
+print(set1.difference(set2).difference(set3))
+print(set2.intersection(set3))
+print(set1.intersection(set2).difference(set3))
+print(set3.intersection(set1).union(set3.intersection(set2)).difference(set1.intersection(set2).intersection(set3)))
